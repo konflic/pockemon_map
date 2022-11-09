@@ -7,19 +7,33 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('pokemon_entities', '0002_pokemon_photo'),
+        ("pokemon_entities", "0002_pokemon_photo"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='PokemonEntity',
+            name="PokemonEntity",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('lat', models.FloatField()),
-                ('lon', models.FloatField()),
-                ('appeared_at', models.DateTimeField()),
-                ('disappeared_at', models.DateTimeField()),
-                ('pokemon', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='pokemon_entities.pokemon')),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("lat", models.FloatField()),
+                ("lon", models.FloatField()),
+                ("appeared_at", models.DateTimeField()),
+                ("disappeared_at", models.DateTimeField()),
+                (
+                    "pokemon",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to="pokemon_entities.pokemon",
+                    ),
+                ),
             ],
         ),
     ]

@@ -6,33 +6,33 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('pokemon_entities', '0003_pokemonentity'),
+        ("pokemon_entities", "0003_pokemonentity"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='pokemonentity',
-            name='defence',
+            model_name="pokemonentity",
+            name="defence",
             field=models.IntegerField(default=1),
         ),
         migrations.AddField(
-            model_name='pokemonentity',
-            name='health',
+            model_name="pokemonentity",
+            name="health",
             field=models.IntegerField(default=1),
         ),
         migrations.AddField(
-            model_name='pokemonentity',
-            name='level',
+            model_name="pokemonentity",
+            name="level",
             field=models.IntegerField(default=1),
         ),
         migrations.AddField(
-            model_name='pokemonentity',
-            name='stamina',
+            model_name="pokemonentity",
+            name="stamina",
             field=models.IntegerField(default=1),
         ),
         migrations.AddField(
-            model_name='pokemonentity',
-            name='strength',
+            model_name="pokemonentity",
+            name="strength",
             field=models.IntegerField(default=1),
         ),
     ]
