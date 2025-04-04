@@ -18,9 +18,11 @@
 
 Для запуска сайта вам понадобится Python третьей версии.
 
-Скачайте код с GitHub. Затем установите зависимости
+Скачайте код с GitHub. Создайте виртуальное окружение и установите зависимости проекта
 
 ```sh
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 ```
 
